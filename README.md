@@ -1,6 +1,8 @@
 # Customer Behavior & Revenue Intelligence Analysis
 
-An end-to-end data science project that applies exploratory data analysis, feature engineering, and unsupervised machine learning to segment customers and generate actionable business insights from behavioral and demographic data.
+A data-driven customer segmentation project designed to identify high-value customer groups, uncover hidden revenue opportunities, and support strategic decision-making using machine learning.
+
+By analyzing behavioral, financial, and engagement data, this project reveals actionable insights that can help businesses optimize marketing efforts, improve customer retention, and maximize revenue potential.
 
 ---
 
@@ -84,14 +86,14 @@ Three composite features were derived to enrich the modeling:
 
 ---
 
-## Customer Segments
+## Cluster Distribution & Business Value
 
-| Cluster | Segment Name | Characteristics |
-|---|---|---|
-| 0 | Premium Customers | High income, high spending — top revenue contributors |
-| 1 | Moderate-Income, Low-Spending | Average income, low engagement — activation opportunity |
-| 2 | High-Income, Low-Spending | High income, low spending — high untapped revenue potential |
-| 3 | Budget Customers | Low income, low spending — retention focus |
+| Cluster | Segment Name | Business Priority |
+|--------|-------------|------------------|
+| 0 | Premium Customers | High — Core revenue drivers |
+| 1 | Moderate Customers | Medium — Growth opportunity |
+| 2 | High-Income, Low-Spending | Very High — Untapped revenue |
+| 3 | Budget Customers | Low — Retention focus |
 
 ---
 
@@ -129,8 +131,8 @@ Three composite features were derived to enrich the modeling:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/customer-behavior-analysis.git
-   cd customer-behavior-analysis
+   git clone https://github.com/plabonroy910-glitch/customer-behavior-revenue-intelligence.git
+   cd customer-behavior-revenue-intelligence
    ```
 
 2. Install dependencies:
@@ -158,8 +160,9 @@ Three composite features were derived to enrich the modeling:
 
 ## Author
 
-**Roy**
-Data Analytics & Data Science Portfolio Project
+**Plabon Roy**  
+Aspiring Data Analyst | Business Analytics Enthusiast  
+Focused on building data-driven solutions for real-world business problems
 
 ---
 
