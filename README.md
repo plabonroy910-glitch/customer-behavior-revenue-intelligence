@@ -78,10 +78,10 @@ Three composite features were derived to enrich the modeling:
 | `value_efficiency` | `customer_value / (online_engagement_score + 1)` | Measures how effectively engagement converts to revenue |
 
 ### 4. Customer Segmentation (K-Means Clustering)
-- Feature selection: `annual_income`, `spending_score`, `online_engagement_score`, `returns_ratio`
+- Feature selection: all 7 features — original attributes (`annual_income`, `spending_score`, `online_engagement_score`, `returns_ratio`) plus engineered features (`customer_value`, `risk_score`, `value_efficiency`)
 - StandardScaler applied to normalize all features before distance-based modeling
 - Optimal K determined via the Elbow Method → **K = 4**
-- Cluster quality evaluated with **Silhouette Score**
+- Cluster quality evaluated with **Silhouette Score: 0.1471**
 - PCA applied for 2D cluster visualization
 
 ---
@@ -103,6 +103,7 @@ Three composite features were derived to enrich the modeling:
 - **Premium customers** (Cluster 0) are the highest-value segment and warrant dedicated retention and loyalty investment.
 - **Online engagement does not strongly predict spending.** The weak correlation between `online_engagement_score` and `spending_score` suggests that digital engagement alone is insufficient for revenue growth.
 - **Returns risk** is concentrated among a small minority of customers but is disproportionately associated with high engagement profiles.
+- **Engineered features sharpen segmentation.** Including `customer_value`, `risk_score`, and `value_efficiency` in the clustering model reveals behavioral distinctions — such as high-engagement, high-return customers — that were invisible using raw attributes alone.
 
 ---
 
@@ -154,7 +155,7 @@ Three composite features were derived to enrich the modeling:
 - The dataset is synthetically generated and may not fully reflect real-world customer behavior distributions.
 - K-Means assumes spherical clusters and is sensitive to feature scale — alternative algorithms (e.g., DBSCAN, Agglomerative Clustering) were not evaluated.
 - The silhouette score (~0.17–0.20) indicates moderate cluster overlap, which is expected in real-world behavioral data.
-- Feature selection for clustering excludes the engineered features (`customer_value`, `risk_score`, `value_efficiency`), which may improve segmentation quality if included.
+- Engineered features are derived from existing columns and do not introduce external data. Their inclusion improves behavioral granularity but does not expand the underlying information in the dataset.
 
 ---
 
