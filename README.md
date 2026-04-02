@@ -107,6 +107,35 @@ Three composite features were derived to enrich the modeling:
 
 ---
 
+## Business Decision Framework
+
+Each customer segment is mapped to a concrete business decision, 
+data-backed justification, and measurable KPI.
+
+| Cluster | Segment | Business Decision | Expected Outcome | KPI |
+|---|---|---|---|---|
+| 0 | Premium Customers | Launch Premium Loyalty Program | 15–20% retention increase, CLV growth | Retention rate, CLV, purchase frequency |
+| 1 | Moderate, Low-Spending | Re-engagement & Frequency Program | 25–35% increase in purchase frequency | Purchase frequency, reactivation rate |
+| 2 | High-Income, Low-Spending | Personalized Conversion Campaigns | Convert 20–30% into active spenders | Conversion rate, revenue per customer |
+| 3 | Budget / At-Risk | Satisfaction Monitoring & Return Reduction | 15–25% reduction in return rate | Return rate, CSAT score |
+
+> The combined execution of all four decisions creates a full-funnel 
+> customer strategy — protecting existing revenue, activating latent 
+> revenue, recovering dormant revenue, and reducing operational cost.
+```
+
+---
+
+Also update your **Conclusion cell (Section 14)** by adding this line at the end:
+```
+A dedicated Business Decision Framework was developed to translate 
+each customer segment into a concrete, KPI-driven business action — 
+bridging the gap between analytical findings and real-world 
+implementation. This ensures the project delivers not just insights, 
+but decisions.
+
+---
+
 ## Strategic Recommendations
 
 1. **Retain Premium Customers** — Invest in loyalty programs, exclusive offers, and personalized experiences for Cluster 0.
